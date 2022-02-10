@@ -1,0 +1,7 @@
+FROM continuumio/anaconda3:4.4.0
+COPY . /user/app/
+EXPOSE 8050
+WORKDIR /usr/app/
+RUN pip install -r requirements.txt
+CMD python Swagger_Basics.py
+
